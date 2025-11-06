@@ -1,0 +1,5 @@
+Matching Defaults entries for alice on kali:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin, use_pty
+
+User alice may run the following commands on kali:
+    (ALL) /usr/sbin/useradd, /usr/sbin/usermod, /usr/sbin/userdel, /usr/bin/passwd, /bin/systemctl, /usr/bin/apt-get, /bin/journalctl

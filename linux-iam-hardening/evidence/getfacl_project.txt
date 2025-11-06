@@ -1,0 +1,15 @@
+# file: srv/project
+# owner: root
+# group: project
+# flags: -s-
+user::rwx
+group::rwx
+group:project:rwx
+mask::rwx
+other::r-x
+default:user::rwx
+default:group::rwx
+default:group:project:rwx
+default:mask::rwx
+default:other::r-x
+

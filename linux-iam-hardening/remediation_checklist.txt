@@ -1,0 +1,7 @@
+Remediation Checklist:
+[✓] Users & groups created
+[✓] Least privilege sudo policy applied
+[✓] /srv/project ACL & perms set
+[✓] No world-writable system dirs
+[✓] /etc/passwd & /etc/shadow permissions hardened
+[✓] Manual audit logging active (/var/log/manual_audit.log)

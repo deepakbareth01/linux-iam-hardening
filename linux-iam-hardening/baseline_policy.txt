@@ -1,0 +1,33 @@
+=== Baseline Access Control Policy ===
+
+Purpose:
+This policy defines user roles, groups, and access privileges for a small secure team.
+
+Roles & Groups:
+1. Admin (sysadmin)
+   - Users: alice
+   - Privileges: limited sudo for system/user management
+   - Commands: useradd, userdel, passwd, apt-get, systemctl
+
+2. Developer (project)
+   - Users: bob, carol
+   - Privileges: write access to /srv/project
+   - No sudo access
+
+3. Auditor (auditor)
+   - Users: dave
+   - Privileges: read-only on /srv/project
+   - No sudo, home directories locked (chmod 700)
+
+Shared Resource Policy:
+- /srv/project owned by root:project
+- ACL: project group (rwx), others (read-only)
+- setgid bit ensures new files inherit group ownership
+
+Auditing:
+- Manual audit log tracks changes in /etc/sudoers and /etc/passwd
+- Log file: /var/log/manual_audit.log
+
+Compliance:
+- No world-writable system directories
+- All sudo rules least-privilege

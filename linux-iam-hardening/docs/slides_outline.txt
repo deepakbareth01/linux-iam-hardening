@@ -1,0 +1,20 @@
+Slide 1: Project Overview
+- Objective
+- Tools Used (Kali Linux, sudo, ACL)
+
+Slide 2: Baseline Policy
+- Roles (sysadmin, project, auditor)
+- Group membership & access control summaries
+
+Slide 3: Implementation & Evidence
+- Users & groups created
+- /srv/project ACL and permissions
+- Sudo rules deployed
+
+Slide 4: Vulnerabilities Found & Fixed
+- World-writable cron.d fixed
+- NOPASSWD sudo removed/reviewed
+- passwd/shadow permissions hardened
+
+Slide 5: Remediation Checklist & Recommendations
+- Final checklist and next steps for production
